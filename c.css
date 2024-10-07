@@ -1,0 +1,82 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ccc; /* Fondo gris */
+}
+
+.calculator {
+    background-color: #c99ee8; /* Fondo morado para la calculadora */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input {
+    width: 100%; /* Hace que los campos de entrada ocupen todo el ancho del contenedor */
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: none; /* Sin borde para los campos de entrada */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.display {
+    background-color: #eaeaea; /* Color para la pantalla */
+    border: 1px solid #ccc; /* Borde para la pantalla */
+    text-align: center; /* Centra el texto dentro de la pantalla */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none; /* Sin borde para los botones */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Botones para operaciones unarias */
+.unary {
+    background-color: #ffd700; /* Color amarillo para botones unarios */
+}
+
+/* Botones para operaciones binarias */
+.binary {
+    background-color: #a9e2ab; /* Color verde para botones binarios */
+}
+
+/* Botones para operaciones CSV */
+.csv {
+    background-color: hsl(36, 93%, 63%); /* Color naranja para botones CSV */
+}
+
+button:hover {
+    opacity: 0.8; /* Cambia la opacidad cuando se pasa el ratón sobre el botón */
+}
+
+.big {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#error-message {
+    color: red;
+    margin-bottom: 10px; /* Margen inferior para separar de otros elementos */
+}
+
+#dynamic-title {
+    margin-bottom: 20px;
+    font-size: 20px; 
+    color: white; /* Color del título dinámico en blanco para contraste */
+}
+
+#info {
+    margin-top: 20px;
+    font-size: 18px; /* Tamaño de fuente para el campo de información */
+    color: white; /* Color del texto de información en blanco */
+}

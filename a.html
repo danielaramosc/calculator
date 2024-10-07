@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Calculator</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Enhanced Calculator</h1>
+
+        <!-- Título Dinámico -->
+        <h2 id="dynamic-title">Information about the number:</h2>
+
+        <!-- Pantalla para mostrar el resultado y entrada del usuario -->
+        <input type="text" id="input-field" placeholder="Result" class="display" disabled />
+        <input type="text" id="number-input" placeholder="Enter number or CSV list" class="input" />
+
+        <!-- Error Message -->
+        <p id="error-message" class="error"></p>
+
+        <!-- Operaciones Unarias -->
+        <h3>Unary Operations</h3>
+        <button class="unary" id="square-btn">Square</button>
+        <button class="unary" id="modulo">Modulo</button>
+        <button class="unary" id="factorial">Factorial</button>
+
+        <!-- Operaciones Binarias -->
+        <h3>Binary Operations</h3>
+        <button class="binary" id="addition">+</button>
+        <button class="binary" id="subtraction">-</button>
+        <button class="binary" id="multiplication">x</button>
+        <button class="binary" id="division">÷</button>
+        <button class="binary" id="equal">=</button>
+
+        <!-- Operaciones CSV -->
+        <h3>CSV Operations</h3>
+        <button class="csv" id="sum">Sum CSV</button>
+        <button class="csv" id="sort">Sort CSV</button>
+        <button class="csv" id="reverse">Reverse CSV</button>
+        <button class="csv" id="removelast">Remove Last CSV</button>
+
+        <!-- Información -->
+        <h2 id="info" class="big" title="Info about the number">Information about the number</h2>
+        
+    </div>
+
+    <script src="b.js"></script>
+</body>
+</html>
